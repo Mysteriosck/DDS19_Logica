@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>IMC</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <script>
+            let altura = window.prompt("Digite a sua altura:");
+            altura = Number(altura);
+            let peso = window.prompt("Digite o seu peso:");
+            peso = Number(peso);
+            let resultado = peso / altura**2;
+            resultado = resultado * 100             //<-- ex: 4,7968573 * 100 = 479,68573
+            resultado = Math.round(resultado)       //<-- Math.round() arredonda o resulado para inteiro, com o Math.round() o ex fica: 479
+            resultado = resultado /100              //<-- ex: 479 / 100 = 4,79
+
+            if(resultado >= 18.50 && resultado <= 24.99){
+                alert(`O seu IMC: ${resultado}\nSeu peso está normal.`);
+            }else if(resultado < 18.50){
+                alert(`O seu IMC: ${resultado}\nSeu peso está abaixo do esperado, recomendo consultar um médico.`);
+            }else if(resultado > 24.99){
+                alert(`O seu IMC: ${resultado}\nSeu peso está acima do esperado, recomendo consultar um médio.`);
+            }
+        </script>
+    </head>
+</html>
