@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Título</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script>
+        let total = 0;
+        let nota;
+        for(let i = 0; i < 5; i++){
+            nota = Number(prompt(`Digite a ${i+1} nota do aluno:`));
+            if(isNaN(nota)){
+                alert("Informção inserida não é um número. Por favor, insira um número válido")
+                i--;
+                continue;
+            }
+            total += nota;
+        }
+        let media = total/5;
+        if(media >= 7){
+            alert("Aprovado");
+        }else if(media >= 5){
+            alert("Recuperação");
+        }else{
+            alert(`Reprovado ${media} ${total}`);
+        }
+    </script>
+  </body>
+</html>

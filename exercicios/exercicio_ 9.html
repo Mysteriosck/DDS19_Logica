@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script>
+        let array = [];
+        for(let i = 0; i < 10; i++){
+            let num = Number(prompt("Digite um número para adicionar em uma array"));
+            array.push(num);
+        }
+        let somatorio = 0;
+        for(let i = 0; i < array.length;i++){
+            somatorio = somatorio + array[i];
+        }
+        alert(`O somatório dos números armazenados: ${somatorio}`);
+    </script>
+  </body>
+</html>

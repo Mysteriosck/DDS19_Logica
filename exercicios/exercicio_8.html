@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script>
+       let num;
+        let array = [];
+        let TamanhoArray = Number(prompt("Para criarmos uma array, digite o tamanho dela:"));
+        for(let i = 0; i < TamanhoArray; i++) {
+            num = Number(prompt("Digite um número para adicionar na array"));
+            array.push(num);
+        }
+        alert(array.slice().reverse());
+        </script>
+  </body>
+</html>

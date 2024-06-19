@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script>
+          let ano = Number(prompt("Digite um ano:"));
+          let vi;
+          function anoBissexto(n, v){
+              if ((n % 4 === 0 && n % 100 !== 0) || (n % 400 === 0)) {
+                  return true;
+              } else {
+                  return false;
+              }
+          }
+          vi = anoBissexto(ano, vi)
+          if (vi == true){
+              alert("Esse ano é bissexto");
+          }else{
+              alert("Esse ano não é bissexto");
+          }
+    </script>
+  </body>
+</html>
